@@ -1,0 +1,77 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-cerc {
+    width: 503px;
+    max-width: 503px;
+    height: 503px;
+    
+    border-radius: 50%;
+    overflow: hidden; /* Asigură că imaginea este complet vizibilă în interiorul cercului */
+    margin-left: 100px;
+   
+    margin-left: 100px;
+}
+
+
+.img-cerc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asigură că imaginea este întinsă pentru a umple complet cercul */
+   
+}
+.container {
+    width: 757px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-left: 16px;
+    gap: 32px;
+}
+.h1-text {
+    max-width: 668px;
+    width: 100%;
+    height: 61px;
+}
+.regular-text {
+    width: 423px;
+    height: 44px;
+}.btn .btn-primary {
+    width: 511px;
+}
+@media(max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .container {
+        padding-bottom: 32px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    
+    .btn {
+        padding-left: 16px;
+        padding-right: 16px;
+
+
+        width: 100%;
+
+    }
+    .h1-text {
+        width: 379px;
+        height: 122px;
+    }
+    .regular-text {
+        width: 379px;
+    }
+    
+}

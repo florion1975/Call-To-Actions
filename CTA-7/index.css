@@ -1,0 +1,72 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--cta-background);
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+.container {
+    max-width: 757px;
+    width: 100%;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: 32px;
+    
+}
+
+.h1-text {
+    max-width: 688px;
+    width: 100%;
+    text-align: center;
+   
+    gap: 32px;
+    color:white;
+    
+}
+.regular-text {
+    max-width: 757px;
+    width: 100%;
+    text-align: center;
+    gap: 32px;
+    color: white;
+}
+.input-group {
+    max-width: 515px;
+    width: 100%;
+    height: 56px;
+   
+    
+   
+}
+.scnd-regular-text {
+    max-width: 303px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+
+
+}
+
+    
+   
+
+  
