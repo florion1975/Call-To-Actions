@@ -9,6 +9,8 @@
 
 
 .section-left, .section-right{
+    margin-top: 40px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     gap:24px;
@@ -29,12 +31,7 @@
 
 
 .container-hero-1 {
-    position: absolute;
-    top: 40px;
-    left: 223px;
-    max-width: 294px;
-   
-    height: 178px;
+    margin-left: 99px;
     background-image: var(--cta-hills);
     background-size: cover;
     background-position: center;
@@ -44,19 +41,18 @@
     align-items: center;
 }
 .container-2 {
-    position: absolute;
-    bottom: 40px;
     left: 0px;
-
     max-width: 738px;
-    
     height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
-
+}
+.container-4 {
+    margin-left: 90px;
+    margin-right: 150px;
 }
 .h1-text {
     max-width: 410px;
@@ -81,9 +77,9 @@
 
 
 .container-hero-3 {
-    position: absolute;
+    
     top: 40px;
-    right: 223px;
+    margin-left: 99px;
     max-width: 294px;
     
     height: 178px;
@@ -96,8 +92,8 @@
     align-items: center;
 }
 .container-4 {
-    position: absolute;
-    bottom: 40px;
+    
+    margin: 0px;
     right: 0px;
 
     max-width: 738px;
@@ -135,5 +131,20 @@
     }
     .section-right {
         grid-row: 2; 
+    }
+    .container-hero-1 {
+        width: 363px;
+        margin-left: 45px;
+    }
+    .container-hero-3 {
+        width: 363px;
+        margin-left: 45px;
+
+    }
+    .section-left {
+        margin-left: 20px;
+    }
+    .section-right {
+        margin-left: 20px;
     }
 }

@@ -1,77 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .main {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+} 
+body {
+  margin: 0;
 }
-.img-cerc {
-    width: 503px;
-    max-width: 503px;
-    height: 503px;
-    
-    border-radius: 50%;
-    overflow: hidden; /* Asigură că imaginea este complet vizibilă în interiorul cercului */
-    margin-left: 100px;
-   
-    margin-left: 100px;
-}
-
-
-.img-cerc img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asigură că imaginea este întinsă pentru a umple complet cercul */
-   
+.img {
+  width: 403px;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  border-radius: 50%; 
+  margin-left: 40px;
+  margin-right: 16px;
 }
 .container {
-    width: 757px;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    margin-left: 16px;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 557px;
+  gap: 32px;
+  margin-left: 0;
+  
 }
+
 .h1-text {
-    max-width: 668px;
-    width: 100%;
-    height: 61px;
+  width: 688px;
+ 
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60.51px;
+  text-align: center;
+}
+.input-group {
+  display: flex;
+  flex-direction: row;
+  width: 511px;
+}
+.input-group .input {
+  width: 256px;
+  font-size: 16px;
+  background-color: #F6F6F6;
+  font-weight: 400;
+  padding: 17px 16px;
+  border-radius: 4px 0px 0px 4px;
+  border-color: #F6F6F6;
+  border-style:  solid;
+
+}
+.input-group .input:hover{
+  border-color: rgb(197, 231, 197);
+}
+.btn-primary {
+  background-color: #4c684a;
+  color: white;
+  font-size: 18px;
+  font-weight: 500S;
+  border-radius: 0px 4px 4px 0px;
+  padding: 17px 30px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #3A4F39;
+  color: white;
+
 }
 .regular-text {
-    width: 423px;
-    height: 44px;
-}.btn .btn-primary {
-    width: 511px;
+  width: 423px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  
+  margin-top: 32px;
+
 }
-@media(max-width: 600px){
-    .main{
-        flex-direction: column;
-    }
-    .container {
-        padding-bottom: 32px;
-        margin-left: 24px;
-        margin-right: 24px;
-    }
+@media(max-width:700px) {
+  .main {
+    width: 379px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: -35px;
+  }
+  .img {
+    width: 200px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+  }
+  .container {
+    width: 379px;
+    margin: 24px 24px;
+  }
+  .h1-text {
+    width: 379px;
     
-    .btn {
-        padding-left: 16px;
-        padding-right: 16px;
-
-
-        width: 100%;
-
-    }
-    .h1-text {
-        width: 379px;
-        height: 122px;
-    }
-    .regular-text {
-        width: 379px;
-    }
+  }
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .input-group .input {
+    width: 225px;
     
+    align-items: center;
+  }
+  .btn-primary {
+    width: 154px;
+    text-align: center;
+    margin-right: -8px;
+    
+    
+  }
+  .regular-text {
+    width: 360px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
 }
